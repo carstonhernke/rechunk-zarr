@@ -16,3 +16,6 @@ As this is a small demonstration project only, there are some significant assump
 
 ### Helper scripts
 The files `helper/create_zarr.py` and `helper/read_zarr.py` utilize the common [Zarr Python](https://zarr.readthedocs.io/en/stable/getting_started.html) implementation to create a sample .zarr file and to read the re-chunked .zarr file to ensure its integrity.
+
+### Performance
+Using the command `time target/debug/rechunk_zarr data/example_input_big.zarr`, which rechunks a file with 10000 chunks, returns the following timings: `0.07s user 0.83s system 79% cpu 1.144 total`. This was run on a 2016 Macbook Pro with an SSD.
