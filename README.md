@@ -2,7 +2,7 @@
 ## A small demonstration of rechunking a Zarr file in-place using Rust
 
 ### Objective
-To take a Zarr file containing a one-dimensional variable with N data points and N chunks, and rechunk it in-place so all data points are contained in one chunk.
+To take a [Zarr file](https://zarr.readthedocs.io/en/stable/getting_started.html) containing a one-dimensional variable with N data points and N chunks, and rechunk it in-place so all data points are contained in one chunk.
 
 ### Usage
 With Rust and Cargo installed, run `cargo run data/example_input.zarr` to rechunk the file in-place. `data/example_input.zarr` may be substituted with another file path.
